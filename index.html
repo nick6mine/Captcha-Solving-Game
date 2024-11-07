@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captcha Solving Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="welcome-menu" id="welcomeMenu">
+        <h1>Welcome to Captcha Solver!</h1>
+        <p>You have 7 seconds to solve each captcha. Solve as many as you can!</p>
+        <button class="start-btn" id="startButton">Start Game</button>
+    </div>
+
+    <div class="game-container" id="gameContainer">
+        <div class="stats-container">
+            <div class="timer">
+                <span>Time Left</span>
+                <div id="timer">7</div>
+            </div>
+            <div class="streak">
+                <span>Streak</span>
+                <div id="streakCount">0</div>
+            </div>
+        </div>
+        <div class="captcha-container">
+            <canvas id="captchaCanvas" width="200" height="60"></canvas>
+        </div>
+        <div class="input-container">
+            <input type="text" id="captchaInput" placeholder="TYPE HERE" maxlength="6">
+            <button class="submit-btn" id="submitButton">Submit</button>
+        </div>
+        <div class="message-container">
+            <div class="error-message" id="errorMessage">Incorrect! Try again</div>
+            <div class="game-over-message" id="gameOverMessage">
+                Game Over! Final streak: <span id="finalStreak">0</span>
+                <br>
+                <button class="play-again-btn" id="playAgainButton">Play Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
