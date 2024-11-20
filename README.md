@@ -1,1 +1,1 @@
-Captcha Solving Game that I made
+Made a captcha solving game w vanilla js, html, and CSS. :)
